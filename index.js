@@ -1,28 +1,29 @@
 var App = require('ghost-app'),
-
     MyApp;
 
 MyApp = App.extend({
 
-    install: function () {},
+  install: function() {},
 
-    uninstall: function () {},
+  uninstall: function() {},
 
-    activate: function () {
-    },
+  activate: function() {
+  },
 
-    deactivate: function () {},
+  deactivate: function() {},
 
-    filters: {
-       ghost_head: 'handleGhostHead',
-       ghost_foot: [9, 'handleGhostFoot']
-    },
-    handleGhostHead: function () {
-      console.log('hi');
-    },
-    handleGhostFoot: function () {
-      console.log('foot sup');
-    }
+  filters: {
+     ghost_head: 'handleGhostHead',
+     ghost_foot: [9, 'handleGhostFoot']
+  },
+
+  handleGhostHead: function() {
+    console.log('hi');
+  },
+
+  handleGhostFoot: function() {
+    console.log('foot sup');
+  }
 
 });
 
