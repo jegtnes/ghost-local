@@ -6,7 +6,7 @@
   },
   "ghost": {
     "permissions": {
-      "filters": ["ghost_head", "ghost_foot"]
+      "helpers": ["browse", "read", "edit", "add", "destroy"]
     }
   }
 }

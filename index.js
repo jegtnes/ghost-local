@@ -1,4 +1,5 @@
 var App = require('ghost-app'),
+    // config = require('../config'),
     MyApp;
 
 MyApp = App.extend({
@@ -8,23 +9,16 @@ MyApp = App.extend({
   uninstall: function() {},
 
   activate: function() {
+    // this.app.helpers.register('isLocal', this.wat);
+    console.log('activate');
   },
 
   deactivate: function() {},
 
-  filters: {
-     ghost_head: 'handleGhostHead',
-     ghost_foot: [9, 'handleGhostFoot']
-  },
-
-  handleGhostHead: function() {
-    console.log('hi');
-  },
-
-  handleGhostFoot: function() {
-    console.log('foot sup');
+  wat: function() {
+    console.log('calling wat');
+    return false;
   }
-
 });
 
 module.exports = MyApp;
